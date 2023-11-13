@@ -2,80 +2,144 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Red+Hat+Display&display=swap" rel="stylesheet">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/mystyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grød</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="forside">
-  <header>
-    <!-- Logo -->
-    <a href="/index.html">
-      <img src="images/logo_sydyk.png" alt="Logo" class="logo">
-    </a>
-    <nav>
-      <div class="menu">
-        <div class="dropdown">
-          <button class="dropbtn">Syning for begyndere</button>
-          <ul class="dropdown-content">
-            <li><a href="godekøb.html">Gode køb</a></li>
-            <a href="index.html">Tips og tricks</a>
-            <a href="index.html">Stof guide</a>
-            <a href="index.html">Grundlæggende syning og teknikker</a>
-            <a href="index.html">Pasform og tilpasning</a>
-            <a href="index.html">Hvilken symaskine skal jeg vælge?</a>
-          </ul>
+<body>
+    <header>
+        <!-- Burger menu -->
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-        <div class="dropdown">
-          <button class="dropbtn">Syopskrifter</button>
-          <ul class="dropdown-content">
-            <li><a href="Syopskrifter.html">Syning for travle sjæle</a></li>
-            <a href="givditgamlenytliv.html">Giv dit gamle nyt liv</a>
-            <a href="index.html">Underdele</a>
-            <a href="index.html">Overdele</a>
-            <a href="index.html">Accesories</a>
-            <a href="index.html">Til hjemmet</a>
-          </ul>
+        <!-- Logo -->
+        <h1 class="logo-container">
+            <a href="/index.html">
+                <img src="images/images/groed.png" alt="Logo" class="logo">
+            </a>
+        </h1>
+        <!-- Navigation -->
+        <div class="menu" id="main-menu">
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <ul class="dropdown-content">
+                    <li><a href="index.html">Se vores menu</a></li>
+                    <a href="index.html">Bestil online</a>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Shop</button>
+                <ul class="dropdown-content">
+                    <li><a href="index.html">Shop produkter</a></li>
+                    <a href="index.html">Shop kogebøger</a>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Arrangementer</button>
+                <ul class="dropdown-content">
+                    <li><a href="index.html">Se alle arrangementer</a></li>
+                    <a href="index.html">Sådan tilmelder du dig</a>
+                    <a href="index.html">Billedgalleri</a>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Opskrifter</button>
+                <ul class="dropdown-content">
+                    <li><a href="index.html">Alle opskrifter</a></li>
+                    <a href="index.html">Drikkevarer</a>
+                    <a href="index.html">Grød</a>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Om Grød</button>
+                <ul class="dropdown-content">
+                    <li><a href="index.html">Historien bag</a></li>
+                </ul>
+            </div>
         </div>
+    </header>
+    <div class="slider">
+        <img src="billede1.jpg" alt="Billede 1">
+        <img src="billede2.jpg" alt="Billede 2">
+        <img src="billede3.jpg" alt="Billede 3">
+    </div>
+    <div class="destination">
+        <h2>Grød</h2>
+        <p>Grød</p>
+    </div>
 
+    <div class="forside">
+        <header>
+            <nav>
+                <div class="menu">
+                    <div class="dropdown">
+                        <button class="dropbtn">Menu</button>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html">Se vores menu</a></li>
+                            <a href="index.html">Bestil online</a>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Shop</button>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html">Shop produkter</a></li>
+                            <a href="index.html">Shop kogebøger</a>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Arrangementer</button>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html">Se alle arrangementer</a></li>
+                            <a href="index.html">Sådan tilmelder du dig</a>
+                            <a href="index.html">Billedgalleri</a>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Opskrifter</button>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html">Alle opskrifter</a></li>
+                            <a href="index.html">Drikkevarer</a>
+                            <a href="index.html">Grød</a>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Om Grød</button>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html">Historien bag</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+        </main>
+    </div>
 
-        <div class="dropdown">
-          <button class="dropbtn">Kontakt</button>
-          <ul class="dropdown-content">
-            <li><a href="index.html">Kontakt mig</a></li>
-            <a href="index.html">Q&A</a>
-            <a href="index.html">Chat</a>
-          </ul>
+    <footer class="footer-container">
+        <div class="footer-icons">
+            <!-- Her kan du tilføje dine egne ikoner eller bruge et ikonbibliotek -->
+            <img src="images/images/facebook (1).png" alt="Icon 1">
+            <img src="images/images/instagram.png" alt="Icon 2">
+            <img src="images/images/twitter-alt-circle.png" alt="Icon 3">
+            <img src="images/images/tiktok.png" alt="Icon 4">
         </div>
-
-        <div class="dropdown">
-          <button class="dropbtn">Inspirations galleri</button>
-          <ul class="dropdown-content">
-            <li><a href="index.html">Del dine egne projekter</a></li>
-            <a href="index.html">Mine projekter</a>
-            <a href="index.html">Se alt</a>
-          </ul>
+        <div class="footer-text">
+            <p>Grød</p>
+            <p>Graven 8, 8000 Aarhus</p>
+            <p>info@groed.com</p>
         </div>
+    </footer>
 
-        <div class="dropdown">
-          <button class="dropbtn">Om Sydyk</button>
-          <ul class="dropdown-content">
-            <li><a href="index.html">Historien bag</a></li>
-          </ul>
-        </div>
-        
-    </nav>
-  </header>
-  <main>
-
-  </main>
-  <footer>
-
-  </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("main-menu");
+            menu.classList.toggle("active");
+        }
+    </script>
 </body>
 
 </html>
