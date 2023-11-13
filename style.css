@@ -133,6 +133,46 @@ header {
     }
 }
 
+<!--SLET HVIS DET IKKE VIRKER--!>
+/* Your existing styles */
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: static;
+        background-color: #668A69;
+        box-shadow: none;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .back-btn {
+        background-color: #A9C7A7;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        width: 100%;
+        font-family: 'dm serif text', sans-serif;
+        margin-bottom: 10px;
+    }
+}
+
 .footer-container {
     display: flex;
     flex-direction: column;
