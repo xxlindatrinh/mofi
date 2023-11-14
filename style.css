@@ -1,12 +1,15 @@
+/* Reset and general styles */
 body {
     background-color: #EEDAD5;
-    font-family: Arial, sans-serif;
+    font-family: 'dm serif text', sans-serif;
     margin: 0;
     padding: 0;
     position: relative;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
+/* Header styles */
 header {
     background-color: #668A69;
     color: rgb(0, 0, 0);
@@ -14,8 +17,12 @@ header {
     padding: 10px;
     position: relative;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/* Logo styles */
 .logo-container {
     display: flex;
     justify-content: center;
@@ -28,13 +35,23 @@ header {
     max-height: 50px;
 }
 
+/* Header icon styles */
+.header-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.header-icons img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+/* Burger menu styles */
 .burger-menu {
     display: none;
-    position: absolute;
-    top: 50px;
-    left: 10px;
     cursor: pointer;
-    z-index: 2;
 }
 
 .burger-menu div {
@@ -57,6 +74,7 @@ header {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/* Main menu styles */
 .menu {
     display: none;
     flex-direction: column;
@@ -72,6 +90,7 @@ header {
     display: flex;
 }
 
+/* Dropdown styles */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -108,6 +127,7 @@ header {
     display: block;
 }
 
+/* Responsive styles */
 @media (max-width: 768px) {
     .burger-menu {
         display: block;
@@ -133,46 +153,7 @@ header {
     }
 }
 
-<!--SLET HVIS DET IKKE VIRKER--!>
-/* Your existing styles */
-
-@media (max-width: 768px) {
-    .burger-menu {
-        display: block;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: static;
-        background-color: #668A69;
-        box-shadow: none;
-        z-index: 1;
-        width: 100%;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    .back-btn {
-        background-color: #A9C7A7;
-        color: white;
-        padding: 10px;
-        border: none;
-        cursor: pointer;
-        text-align: left;
-        width: 100%;
-        font-family: 'dm serif text', sans-serif;
-        margin-bottom: 10px;
-    }
-}
-
+/* Footer styles */
 .footer-container {
     display: flex;
     flex-direction: column;
