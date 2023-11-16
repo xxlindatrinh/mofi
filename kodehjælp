@@ -1,25 +1,13 @@
-   /* Style for the container */
-   .banner-container {
-    position: fixed;
-    text-align: center;
-    color: #000000; /* Text color */
-    font-family: Arial, sans-serif; /* Specify the font family */
-    padding-top: 115px; /* Add padding to the container */
-    background-image: url(../images/images/mobilbanner.png);
-    width:100%;
-    max-height: 20%px; /* Adjust the height as needed */
-    /* Additional background properties can be added, such as background-position, background-repeat, etc. */
-  }
+  <div class="loeboggroed-container">
+        <h2>Løb og Grød</h2>
+    </div>
 
-  /* Style for the heading text */
-  .heading-on-image {
-    font-size: 36px; /* Adjust the font size as needed */
-    font-weight: bold; /* Adjust font weight as needed */
-    margin-bottom: 20px; /* Adjust the margin as needed */
-  }
-
-<div class="banner-container">
-        <h1 class="heading-on-image">Arrangementer</h1>
-      </div>
-
-du skal bare lige ændre background-image til background også vælge en farve
+css:
+.loeboggroed-container {
+  margin: 20px auto; /* Center the container horizontally */
+  padding: 10px; /* Add padding as needed */
+  border-radius: 20px; /* Set border-radius for rounded corners */
+  background-color: #cea3a6; /* Set background color */
+  text-align: center;
+  width:fit-content
+}
