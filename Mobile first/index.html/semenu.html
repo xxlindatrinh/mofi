@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grød</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <style>
+        /* CSS for den nye menu under headeren */
+        .menu-container {
+            background-color: #668A69; /* Samme farve som header */
+            width: 100%;
+            display: none; /* Skjul ved mindre skærm */
+        }
+
+        .main-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: #668A69; /* Samme farve som header */
+        }
+
+        .main-menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+
+        .main-menu a:hover {
+            background-color: #A9C7A7; /* Ændr farven ved hover efter behov */
+        }
+
+        /* Skjul den gamle navigation ved stor skærm */
+        @media (min-width: 769px) {
+            .menu {
+                display: none;
+            }
+
+            .menu-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0; /* Mere luft mellem logo og top */
+            }
+        }
+
+        /* Stil for Tekst og billede under udvikling */
+        .under-construction {
+            text-align: center;
+            margin-top: 50px; /* Juster afstanden fra toppen efter behov */
+        }
+
+        .construction-image {
+            width: 50%; /* Juster billedets bredde efter behov */
+            max-width: 400px; /* Juster det maksimale bredde efter behov */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+        </div>
+        <!-- Logo -->
+        <h1 class="logo-container">
+            <a href="/index.html">
+                <img src="images/images/groed.png" alt="Logo" class="logo">
+            </a>
+        </h1>
+      
+
+        <!-- Header icon -->
+        <a href="/profil.html">
+            <div class="header-icons">
+                <!-- Her kan du tilføje dine egne ikoner eller bruge et ikonbibliotek -->
+                <img src="images/images/account.png" alt="Icon 1">
+            </div>
+        </a>
+
+        <!-- Navigation -->
+        <div class="menu" id="main-menu">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleSubMenu(0)">Menu &#9654;</button>
+                <ul class="dropdown-content">
+                    <li><a href="index.html">Se vores menu</a></li>
+                    <a href="index.html">Bestil online</a>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleSubMenu(1)">Shop &#9654;</button>
+                <ul class="dropdown-content">
+                    <li><a href="index.html">Shop produkter</a></li>
+                    <a href="index.html">Shop kogebøger</a>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleSubMenu(2)">Arrangementer &#9654;</button>
+                <ul class="dropdown-content">
+                    <li><a href="index.html">Se alle arrangementer</a></li>
+                    <a href="index.html">Sådan tilmelder du dig</a>
+                    <a href="index.html">Billedgalleri</a>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleSubMenu(3)">Opskrifter &#9654;</button>
+                <ul class="dropdown-content">
+                    <li><a href="index.html">Alle opskrifter</a></li>
+                    <a href="index.html">Drikkevarer</a>
+                    <a href="index.html">Grød</a>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleSubMenu(4)">Om Grød &#9654;</button>
+                <ul class="dropdown-content">
+                    <li><a href="index.html">Historien bag</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ny menu under header -->
+    <div class="menu-container">
+        <ul class="main-menu">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Opskrifter</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Arrangementer</a></li>
+            <li><a href="#">Om Grød</a></li>
+        </ul>
+    </div>
+
+    <!-- Tekst og billede under udvikling -->
+    <div class="wrapper">
+        <div class="box">
+        <h1>403</h1>
+        <p>Sorry, it's not allowed to go beyond this point!</p>
+        <p><a href="/">Please, go back this way.</a></p>
+        </div>
+        </div>
+
+    <footer class="footer-container">
+        <div class="footer-icons">
+            <!-- Her kan du tilføje dine egne ikoner eller bruge et ikonbibliotek -->
+            <img src="images/images/facebook (1).png" alt="Icon 1">
+            <img src="images/images/instagram.png" alt="Icon 2">
+            <img src="images/images/twitter-alt-circle.png" alt="Icon 3">
+            <img src="images/images/tiktok.png" alt="Icon 4">
+        </div>
+        <div class="footer-text">
+            <p>Grød</p>
+            <p>Graven 8, 8000 Aarhus</p>
+            <p>info@groed.com</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("main-menu");
+            menu.classList.toggle("active");
+        }
+
+        function toggleSubMenu(index) {
+            var subMenu = document.querySelectorAll('.dropdown-content')[index];
+            subMenu.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

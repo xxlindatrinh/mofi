@@ -1,0 +1,332 @@
+/* Reset and general styles */
+body {
+    background-color: #EEDAD5;
+    font-family: 'dm serif text', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    background-color: #668A69;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styles */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 50px;
+}
+
+/* Header icon styles */
+.header-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.header-icons img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+/* Burger menu styles */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-menu div {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.burger-menu.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-menu.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Main menu styles */
+.menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #668A69;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+.menu.active {
+    display: flex;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #A9C7A7;
+    color: black; /* Sort skrift */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: left; 
+    width: 100%;
+    font-family: 'dm serif text', sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #668A69;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: auto;
+}
+
+.dropdown-content a {
+    color: black; /* Sort skrift */
+    padding: 12px 16px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Larger screens */
+@media (min-width: 769px) {
+    /* New styles for the navigation bar on larger screens */
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #668A69;
+        position: static;
+        width: 100%;
+        top: 0;
+    }
+
+    .menu-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0; /* Mere luft mellem logo og top */
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+    }
+
+    .header-icons {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #668A69;
+        box-shadow: none;
+        z-index: 1;
+        width: auto;
+    }
+
+    .menu .dropdown-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-content a {
+        padding: 12px 16px;
+        display: block;
+        text-decoration: none;
+        color: black; /* Sort skrift */
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+}
+
+/* Footer styles */
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #A9C7A7;
+    padding: 15px; /* Øget padding for at give mere højde */
+    color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-height: 70px; /* Ændret maksimalhøjde for at give mere plads til indhold */
+    border-top: 2px solid #668A69;
+}
+
+.footer-text {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.footer-icons {
+    display: flex;
+}
+
+.footer-icons img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+/* Basale stilarter */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown {
+        width: 100%;
+        text-align: left;
+    }
+
+    .dropbtn {
+        width: 100%;
+    }
+}
+html { box-sizing: border-box; }
+
+*,
+*::before,
+*::after { box-sizing: inherit; }
+
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: normal 100%/1.15 "Merriweather", serif;
+  background: #fff url("https://www.dropbox.com/s/0czxq7wr862we98/texture.jpg?raw=1") repeat 0 0;
+  color: #fff;
+}
+
+/* https://www.vecteezy.com/vector-art/87721-wood-fence-vectors */
+.wrapper {
+  position: relative;
+  max-width: 1298px;
+  height: auto;
+  margin: 2em auto 0 auto;
+  background: transparent url("https://www.dropbox.com/s/qq5n8w99q40wtrg/wood-fence.png?raw=1") no-repeat center top 24em;
+}
+
+/* https://www.vecteezy.com/vector-art/237238-dog-family-colored-doodle-drawing */
+.box {
+  max-width: 70%;
+  min-height: 600px;
+  margin: 0 auto;
+  padding: 1em 1em;
+  text-align: center;
+  background: transparent url("https://www.dropbox.com/s/ft9vhk6720t1k86/dog-family-colored-doodle-drawing.jpg?raw=1") no-repeat top 10em center;
+}
+
+h1 {
+  margin: 0 0 1rem 0;
+  font-size: 8em;
+  text-shadow: 0 0 6px #8b4d1a;
+}
+
+p {
+  margin-bottom: 0.5em;
+  font-size: 1.75em;
+  color: #ea8a1a;
+}
+
+p:first-of-type {
+  margin-top: 16em;
+  text-shadow: none;
+}
+
+p > a {
+  border-bottom: 1px dashed #837256;
+  font-style: italic;
+  text-decoration: none;
+  color: #837256;
+}
+
+p > a:hover { text-shadow: 0 0 3px #8b4d1a; }
+
+p img { vertical-align: bottom; }
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    background-size: 300px 114px;
+    background-position: center top 22em;
+    }
+
+  .box {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-size: 320px 185px;
+  }
+
+  p:first-of-type { margin-top: 12em; }
+}

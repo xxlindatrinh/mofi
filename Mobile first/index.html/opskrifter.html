@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grød</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Burger menu -->
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!-- Logo -->
+        <h1 class="logo-container">
+            <a href="/index.html">
+                <img src="images/images/groed.png" alt="Logo" class="logo">
+            </a>
+        </h1>
+        <div class="header-icons">
+            <!-- Her kan du tilføje dine egne ikoner eller bruge et ikonbibliotek -->
+            <img src="images/images/account.png" alt="Icon 1">
+        </div>
+        <!-- Navigation -->
+        <div class="menu" id="main-menu">
+            <!-- Dropdown menuer her -->
+        </div>
+    </header>
+
+    <section class="page-section">
+        <div class="section-box">
+            <h2>Opskrifter</h2>
+            <!-- Indhold af din første boks her -->
+        </div>
+        <div class="section-box extra-box">
+            <h2>Ekstra boks</h2>
+            <!-- Indhold af din ekstra boks her -->
+        </div>
+    </section>
+
+    
+    <footer class="footer-container">
+        <div class="footer-icons">
+            <!-- Her kan du tilføje dine egne ikoner eller bruge et ikonbibliotek -->
+            <img src="images/images/facebook (1).png" alt="Icon 1">
+            <img src="images/images/instagram.png" alt="Icon 2">
+            <img src="images/images/twitter-alt-circle.png" alt="Icon 3">
+            <img src="images/images/tiktok.png" alt="Icon 4">
+        </div>
+        <div class="footer-text">
+            <p>Grød</p>
+            <p>Graven 8, 8000 Aarhus</p>
+            <p>info@groed.com</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("main-menu");
+            menu.classList.toggle("active");
+        }
+
+        function toggleSubMenu(index) {
+            var subMenu = document.querySelectorAll('.dropdown-content')[index];
+            subMenu.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

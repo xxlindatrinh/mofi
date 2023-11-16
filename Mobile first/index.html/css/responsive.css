@@ -1,0 +1,95 @@
+/* Basale stilarter */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown {
+        width: 100%;
+        text-align: left;
+    }
+
+    .dropbtn {
+        width: 100%;
+    }
+}
+
+/* Stilarter for skærme bredere end 768px */
+@media (min-width: 769px) {
+    .burger-menu {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        width: auto;
+    }
+
+    .dropdown-content {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        background-color: #668A69;
+        box-shadow: none;
+        z-index: 1;
+        width: auto;
+    }
+
+    .dropdown-content a {
+        padding: 12px 16px;
+        display: block;
+        text-decoration: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    /* CSS for den nye menu under headeren */
+    .menu-container {
+        background-color: #668A69; /* Samme farve som header */
+        width: 100%;
+    }
+
+    .main-menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        background-color: #668A69; /* Samme farve som header */
+    }
+
+    .main-menu a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        margin-right: 80px;
+    }
+
+    .main-menu a:hover {
+        background-color: #A9C7A7; /* Ændr farven ved hover efter behov */
+    }
+
+    /* Centrer logoet ved stor skærm */
+    .logo-container {
+        flex-grow: 1;
+    }
+}
