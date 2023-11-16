@@ -1,0 +1,23 @@
+html:
+
+<div class="container-velkommen">
+            <div class="text-box1">
+                <p>Velkommen til vores verden af boligindretning og kaniner! <br>
+                    Hos os tror vi på at skabe hjem, der er fyldt med æstetik <br>
+                    og hygge, hvor din kanin også er en del af det harmoniske <br>
+                    ensemble. Udforsk vores inspirerende måder at kombinere <br>
+                    stil og kærlighed til dine pelsede følgesvende.</p>
+            </div>
+        </div>
+
+css:
+
+.container-velkommen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 75vh;
+    margin-right: 70px; 
+}
+
+
